@@ -83,13 +83,15 @@ while True:
         # browseres.add_argument("--headless")
         browseres.add_argument("user-agent={}".format(str(generate_user_agent())))
         # browseres.add_argument('--proxy-server=%s' % prk)
+        # browseres.add_argument("ignore-certificate-errors")
+
         # browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=browseres)
         browser = webdriver.Chrome(executable_path="chromedriver.exe", options=browseres)
 
         print(n, browseres.arguments)
 
 
-        browser.get('https://615528.click-allow.top/?v=1')
+        browser.get('https://615528.click-allow.top')
 
         time.sleep(10)
         browser.refresh()
